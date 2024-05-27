@@ -1,6 +1,6 @@
 # Extensión de Chrome Gestor de Contraseñas FOXHOUND PASS MANAGER
 
-![Icono de la aplicación](images/icon.png)
+<img src="images/icon.png" alt="Icono de la aplicación" width="50%">
 
 Esta es una extensión simple de Chrome que permite a los usuarios gestionar sus contraseñas.
 
