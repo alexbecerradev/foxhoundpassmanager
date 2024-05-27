@@ -26,18 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   document.getElementById('viewPasswords').addEventListener('click', function() {
-    chrome.storage.local.get({ passwords: [] }, function(result) {
-      const passwords = result.passwords;
-      const passwordList = document.getElementById('passwordList');
-      passwordList.innerHTML = '';
-
-      passwords.forEach(function(passwordEntry) {
-        const div = document.createElement('div');
-        div.textContent = `Site: ${passwordEntry.site}, Username: ${passwordEntry.username}, Password: ${passwordEntry.password}`;
-        passwordList.appendChild(div);
-      });
-    });
-  });
+    chrome.tabs.create({ url: chrome.runtime.getURL('viewPasswords.html') });
+  });  
 
   document.getElementById('generatePassword').addEventListener('click', function() {
     const password = generateRandomPassword(10);
