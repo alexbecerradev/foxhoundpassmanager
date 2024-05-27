@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Manager</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <img src="images/icon.png" alt="Password Manager Icon" class="icon">
+    <h1>Password Manager</h1>
+    <form id="passwordForm">
+      <input type="text" id="site" placeholder="Site URL" required readonly>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <div class="password-container">
+        <button type="button" id="togglePassword">Show</button>
+      </div>
+      <button type="submit">Save Password</button>
+    </form>
+    <button id="generatePassword">Generate Password</button>
+    <button id="viewPasswords">View Saved Passwords</button>
+    <div id="passwordList"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

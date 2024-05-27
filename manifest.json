@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Password Manager",
+  "version": "1.1",
+  "description": "A simple password manager extension.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    }
+  },
+  "options_page": "options.html"
+}
